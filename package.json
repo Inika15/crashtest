@@ -1,0 +1,30 @@
+{
+  "name": "crashtest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Adversarial resilience harness for PayPal integrations and payment agents",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "targets/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "demo": "MOCK_MODE=true turbo run dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.3",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.9",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

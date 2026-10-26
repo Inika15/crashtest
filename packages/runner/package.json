@@ -1,0 +1,26 @@
+{
+  "name": "@crashtest/runner",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@crashtest/paypal": "*",
+    "@crashtest/scenarios": "*",
+    "@crashtest/scoring": "*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.9",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.13",
+    "ts-jest": "^29.2.5"
+  }
+}
